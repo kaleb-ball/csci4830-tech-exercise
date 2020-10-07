@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <form [formGroup]="form" (ngSubmit)="onSubmit(form)">
+        <div class="form-group">
+            <input type="number" formControlName="length" placeholder="Length in Minutes">
+            <div *ngIf="form.get('length').hasError('required') && submitted">
+            Oops, please provide a length!
+            </div>
+        </div>
+        <div class="form-group">
+            <input formControlName="type" placeholder="Type">
+            <div *ngIf="form.get('type').hasError('required') && submitted">
+                Oops, please provide a type!
+            </div>
+        </div>
+        <div class="form-group">
+            <input formControlName="date" placeholder="Date (mm-dd-yyyy)">
+            <div *ngIf="form.get('date').hasError('required') && submitted">
+                Oops, please provide a date!
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+</div>
