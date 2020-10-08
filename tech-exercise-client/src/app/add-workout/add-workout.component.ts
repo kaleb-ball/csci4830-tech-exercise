@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import {Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { environment } from '../../environments/environment';
+   import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 @Component({

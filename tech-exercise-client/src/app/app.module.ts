@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AddWorkoutComponent } from './add-workout/add-workout.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 
